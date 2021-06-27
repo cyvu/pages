@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="/css/default.css">
+  <script src="https://kit.fontawesome.com/0136c2760b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div id="logo"></div>
+  </header>
+  <nav>
+    <a class="button nav-link" href="/">
+      <i class="fas fa-home"></i>
+      <span>Start</span>
+    </a>
+    <a class="button nav-link" href="/">
+      <i class="fas fa-book"></i>
+      <span>About</span>
+    </a>
+    <a class="button nav-link" href="/">
+      <i class="fas fa-user"></i>
+      <span>Profile</span>
+    </a>
+  </nav>
+  <main>
+    {{ content | safe }}
+  </main>
+  <footer>
+    <ul>
+      <li>List item 1</li>
+      <li>List item 2</li>
+      <li>List item 3</li>
+      <li>List item 4</li>
+    </ul>
+    <ul>
+      <li>List item 1</li>
+      <li>List item 2</li>
+      <li>List item 3</li>
+      <li>List item 4</li>
+    </ul>
+    <ul>
+      <li>List item 1</li>
+      <li>List item 2</li>
+      <li>List item 3</li>
+      <li>List item 4</li>
+    </ul>
+    <ul>
+      <li>List item 1</li>
+      <li>List item 2</li>
+      <li>List item 3</li>
+      <li>List item 4</li>
+    </ul>
+  </footer>
+</body>
+</html>

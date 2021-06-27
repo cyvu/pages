@@ -1,0 +1,32 @@
+{
+  "name": "pages",
+  "version": "0.0.1",
+  "description": "Template for static site generators",
+  "main": "../Private_html/index.njk",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve --port=8080",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cyvu/pages.git"
+  },
+  "keywords": [
+    "static",
+    "site",
+    "generator"
+  ],
+  "author": "Christoffer Dahlberg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cyvu/pages/issues"
+  },
+  "homepage": "https://github.com/cyvu/pages#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  },
+  "dependencies": {
+    "nunjucks": "^3.2.3"
+  }
+}
