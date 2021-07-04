@@ -1,24 +1,46 @@
 ---
-title: A page for you
+title: Pages
 layout: base.njk
 ---
+<script>
+  var f = document.getElementById('foo');
+  document.addEventListener('click', function(ev){
+    f.style.transform = 'translateY('+(ev.clientY-25)+'px)';
+    f.style.transform += 'translateX('+(ev.clientX-25)+'px)';
+  },false);
+</script>
 
-<h1>Start</h1>
+<div class="state">
+  <ul id="foo" class="ball">
+    <li>
+      <a href="#state-one">State1</a>
+    </li>
+    <li>
+      <a href="#state-two">State2</a>
+    </li>
+  </ul>
+</div>
+
+<h1></h1>
+
+<svg viewBox="0 0 36 36" class="circular-chart">
+  <path class="circle c1"
+    stroke-dasharray="33, 17"
+    d="M18 2.0845
+      a 15.9155 15.9155 0 0 1 0 31.831
+      a 15.9155 15.9155 0 0 1 0 -31.831"
+  />
+</svg>
+
 <div class="card">
-    <h2>Item 1</h2>
-    <div class="img">
-        <img src="/img/img1.jpg" width="200" height="200" alt="Item image 1" />
-    </div>
+  <h1>Item 1</h1>
+  <p>Card text</p>
 </div>
 <div class="card">
-    <h2>Item 2</h2>
-    <div class="img">
-        <img src="/img/img2.jpg" width="200" height="20" alt="Item image 2" />
-    </div>
+  <h2>Item 2</h2>
+  <p>Card text</p>
 </div>
 <div class="card">
-    <h2>Item 3</h2>
-    <div class="img">
-        <img src="/img/img3.jpg" width="200" height="200" alt="Item image 3" />
-    </div>
+  <h3>Item 3</h3>
+  <p>Card text</p>
 </div>
