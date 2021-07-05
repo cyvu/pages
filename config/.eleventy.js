@@ -6,22 +6,21 @@ module.exports = function(config) {
     dev  = global.dev  = (process.env.ELEVENTY_ENV === 'development'),
     now = new Date();
 
-  module.exports = config => {
-  }
+  //module.exports = config => {
+  //}
 
   let nunjucksEnvironment = new Nunjucks.Environment(
-    new Nunjucks.FileSystemLoader("../Private_html/_includes")
+    new Nunjucks.FileSystemLoader("../private_html/_includes")
   );
   
   config.setLibrary("njk", nunjucksEnvironment);
 
-  config.addPassthroughCopy("../Private_html/js")
-  config.addPassthroughCopy("../Private_html/css")
-  config.addPassthroughCopy("../Private_html/img")
-  config.addPassthroughCopy("../Private_html/node_modules")
+  config.addPassthroughCopy("../private_html/js")
+  config.addPassthroughCopy("../private_html/css")
+  config.addPassthroughCopy("../private_html/img")
 
   // Exported modules
-  config.addShortcode('imageHandler', require('../Private_html/js/helperfunctions.js'));
+  //config.addShortcode('imageHandler', require('../Private_html/js/helperfunctions.js'));
 
 
   config.setTemplateFormats([
@@ -49,10 +48,10 @@ module.exports = function(config) {
     dataTemplateEngine: false,
     
     dir: {
-      input: "../Private_html",
-      output: "../Public_html",
-      includes: "../Private_html/_includes",
-      data: "../Private_html/_data"
+      input: "../private_html",
+      output: "../public_html",
+      includes: "../private_html/_includes",
+      data: "../private_html/_data"
     }
   };
 }

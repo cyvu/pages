@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "description": "Template for static site generators",
   "main": "../private_html/index.njk",
-  "type": "module",
   "scripts": {
     "build": "eleventy",
     "start": "eleventy --serve --port=8080",
