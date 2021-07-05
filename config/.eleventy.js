@@ -1,6 +1,14 @@
 let Nunjucks = require("nunjucks");
 
 module.exports = function(config) {
+  // 11ty configuration
+  const
+    dev  = global.dev  = (process.env.ELEVENTY_ENV === 'development'),
+    now = new Date();
+
+  module.exports = config => {
+  }
+
   let nunjucksEnvironment = new Nunjucks.Environment(
     new Nunjucks.FileSystemLoader("../Private_html/_includes")
   );
@@ -10,6 +18,11 @@ module.exports = function(config) {
   config.addPassthroughCopy("../Private_html/js")
   config.addPassthroughCopy("../Private_html/css")
   config.addPassthroughCopy("../Private_html/img")
+  config.addPassthroughCopy("../Private_html/node_modules")
+
+  // Exported modules
+  config.addShortcode('imageHandler', require('../Private_html/js/helperfunctions.js'));
+
 
   config.setTemplateFormats([
     "md",
@@ -18,7 +31,8 @@ module.exports = function(config) {
     "webp",
     "njk",
     "html",
-    "liquid"
+    "liquid",
+    "js"
   ]);
 
   return {

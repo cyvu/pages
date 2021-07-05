@@ -1,6 +1,5 @@
 .git
-.vscode/*
-Config/node_modules
-Config/node_modules/*
-Public_html
+.vscode
+config/node_modules
+public_html
 log.txt

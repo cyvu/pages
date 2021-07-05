@@ -1,2 +1,2 @@
 #!/bin/bash
-cd Config && npm run start
+cd config && npm run start

@@ -2,10 +2,13 @@
   "name": "pages",
   "version": "0.0.1",
   "description": "Template for static site generators",
-  "main": "../Private_html/index.njk",
+  "main": "../private_html/index.njk",
+  "type": "module",
   "scripts": {
     "build": "eleventy",
     "start": "eleventy --serve --port=8080",
+    "set-dev": "ELEVENTY_ENV=development",
+    "set-prod": "ELEVENTY_ENV=production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -27,6 +30,7 @@
     "@11ty/eleventy": "^0.12.1"
   },
   "dependencies": {
-    "nunjucks": "^3.2.3"
+    "nunjucks": "^3.2.3",
+    "sharp": "^0.28.3"
   }
 }
