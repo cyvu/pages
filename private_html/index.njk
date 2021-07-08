@@ -2,26 +2,21 @@
 title: Pages
 layout: base.njk
 ---
-<script>
-  var f = document.getElementById('foo');
-  document.addEventListener('click', function(ev){
-    f.style.transform = 'translateY('+(ev.clientY-25)+'px)';
-    f.style.transform += 'translateX('+(ev.clientX-25)+'px)';
-  },false);
-</script>
 
-<div class="state">
-  <ul id="foo" class="ball">
-    <li>
-      <a href="#state-one">State1</a>
-    </li>
-    <li>
-      <a href="#state-two">State2</a>
-    </li>
-  </ul>
+<div id="state-nav">
+  <div>
+    <ul>
+      <li>
+        <button name="state[0]" onclick="toggleState()" type="button" value="State1">State1</button>
+      </li>
+      <li>
+        <button name="state[1]" onclick="toggleState()" type="button" value="State2">State2</button>
+      </li>
+    </ul>
+  </div>
 </div>
 
-<h1></h1>
+<h1>Spinny circle</h1>
 
 <svg viewBox="0 0 36 36" class="circular-chart">
   <path class="circle c1"

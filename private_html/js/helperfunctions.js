@@ -1,5 +1,5 @@
 "use strict"
-const sharp = require('sharp')
+/*const sharp = require('sharp')
 
 console.log('helperfunctions')
 
@@ -11,5 +11,5 @@ function imgResize(image, type='jpg') {
       console.log(err)
     })
 }
-
-imgResize('~/Source/Repo/Web/Pages/Private_html/img/img3.jpg');
+*/
+// imgResize('~/Source/Repo/Web/Pages/Private_html/img/img3.jpg');

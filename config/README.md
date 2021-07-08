@@ -1,11 +1,12 @@
-Config
-======
+---
+title: Pages | Readme
+layout: base.njk
+---
 
-This folder contains most settings for the project. npm installs should be performed here as well.
-
-
-Set-up
-------
+> Config
+> ======
+>
+> This folder contains most settings for the project. npm installs should be performed here as well.
 
 
 > ### Prerequisites
@@ -19,14 +20,14 @@ Set-up
 > - **Setup folder-dir**
 > `mkdir -p ~/source/repo/web/pages && cd ~/source/repo/web/pages`
 
-------
 
 > ### Setup
 >
 > 1. **Initiate git**
 > `git init`
 >
-> 2. **Setup git config** (note: replace *italic* with real values)
+> 2. **Setup git config** <br>
+> (note: replace *italic* with real values)
 > `git config --global user.name ***your username***`
 > `git config --global user.email ***your email***`
 > `git config --global credential.helper 'cache --timeout=3600'`
@@ -38,20 +39,20 @@ Set-up
 > 4. **Switch branch** *Optional*
 > `git checkout development`
 >
-> 5. **Install eleventy**
+> 5. **Install eleventy** <br>
 > Change directory to the projects **Config** directory
 > `cd ~/source/repo/web/pages/config`
 > `npm install @11ty/eleventy --save-dev`
 
-------
 
-> ### Building, running and configurating the project
+> ### Building,<br> running and<br> configurating the project
 >
-> **Building and running the development server**
+> The provided bash script, *server.sh*, is located in the root folder where the folders config/ and private_html/ resides. The script handles building, running and other configurations. 
+> For now it takes the following arguments: build, serve (or start), set-dev and set-prod.
+> 
+> Run it by executing the following in the terminal:
+> `cd ~/source/repo/web/pages`
+> `chmod +x server.sh`
+> `./server.sh ***argument***`
 >
-> Next we build or run the server with the following commands, 
-> which are defined in the package.json file
-> `npm run build`
-> `npm run start`
-
-
+> Omiting an argument gives you a list of available commands to run.
