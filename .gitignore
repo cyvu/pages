@@ -3,3 +3,4 @@
 config/node_modules
 public_html
 log.txt
+config/*.code-workspace
