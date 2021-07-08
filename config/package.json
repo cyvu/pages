@@ -5,6 +5,7 @@
   "main": "../private_html/index.njk",
   "scripts": {
     "build": "eleventy",
+    "serve": "eleventy --serve --port=8080",
     "start": "eleventy --serve --port=8080",
     "set-dev": "ELEVENTY_ENV=development",
     "set-prod": "ELEVENTY_ENV=production",
