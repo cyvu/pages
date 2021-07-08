@@ -1,1 +1,0 @@
-/home/cyvu/source/repo/web/pages/config/README.md
